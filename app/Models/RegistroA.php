@@ -23,15 +23,16 @@ use Illuminate\Database\Eloquent\Model;
  */
 class RegistroA extends Model
 {
-    
+    protected $table = 'registroa'; // Nombre de la tabla personalizado
+
     static $rules = [
-		'Nombre' => 'required',
-		'Apellido' => 'required',
-		'Correo' => 'required',
-		'Telefono' => 'required',
-		'Genero' => 'required',
-		'Pais' => 'required',
-		'Departamento' => 'required',
+        'Nombre' => 'required',
+        'Apellido' => 'required',
+        'Correo' => 'required',
+        'Telefono' => 'required',
+        'Genero' => 'required',
+        'Pais' => 'required',
+        'Departamento' => 'required',
     ];
 
     protected $perPage = 20;
@@ -41,8 +42,5 @@ class RegistroA extends Model
      *
      * @var array
      */
-    protected $fillable = ['Nombre','Apellido','Correo','Telefono','Genero','Pais','Departamento'];
-
-
-
+    protected $fillable = ['Nombre', 'Apellido', 'Correo', 'Telefono', 'Genero', 'Pais', 'Departamento'];
 }

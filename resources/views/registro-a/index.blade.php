@@ -10,15 +10,15 @@
             <div class="col-sm-12">
                 <div class="card">
                     <div class="card-header">
-                        <div style="display: flex; justify-content: space-between; align-items: center;">
+                        <div style="displa<y: flex; justify-content: space-between; align-items: center;">
 
                             <span id="card_title">
                                 {{ __('Registro A') }}
                             </span>
 
                              <div class="float-right">
-                                <a href="{{ route('registro-as.create') }}" class="btn btn-primary btn-sm float-right"  data-placement="left">
-                                  {{ __('Create New') }}
+                                <a href="{{ route('registro-a.create') }}" class="btn btn-primary btn-sm float-right"  data-placement="left">
+                                    {{ __('Create New') }}
                                 </a>
                               </div>
                         </div>
