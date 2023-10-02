@@ -61,9 +61,9 @@
 											<td>{{ $registroA->Departamento }}</td>
 
                                             <td>
-                                                <form action="{{ route('registro-as.destroy',$registroA->id) }}" method="POST">
-                                                    <a class="btn btn-sm btn-primary " href="{{ route('registro-as.show',$registroA->id) }}"><i class="fa fa-fw fa-eye"></i> {{ __('Show') }}</a>
-                                                    <a class="btn btn-sm btn-success" href="{{ route('registro-as.edit',$registroA->id) }}"><i class="fa fa-fw fa-edit"></i> {{ __('Edit') }}</a>
+                                                <form action="{{ route('registro-a.destroy',$registroA->id) }}" method="POST">
+                                                    <a class="btn btn-sm btn-primary " href="{{ route('registro-a.show',$registroA->id) }}"><i class="fa fa-fw fa-eye"></i> {{ __('Show') }}</a>
+                                                    <a class="btn btn-sm btn-success" href="{{ route('registro-a.edit',$registroA->id) }}"><i class="fa fa-fw fa-edit"></i> {{ __('Edit') }}</a>
                                                     @csrf
                                                     @method('DELETE')
                                                     <button type="submit" class="btn btn-danger btn-sm"><i class="fa fa-fw fa-trash"></i> {{ __('Delete') }}</button>

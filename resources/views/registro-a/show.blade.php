@@ -14,7 +14,7 @@
                             <span class="card-title">{{ __('Show') }} Registro A</span>
                         </div>
                         <div class="float-right">
-                            <a class="btn btn-primary" href="{{ route('registro-as.index') }}"> {{ __('Back') }}</a>
+                            <a class="btn btn-primary" href="{{ route('registro-a.index') }}"> {{ __('Back') }}</a>
                         </div>
                     </div>
 

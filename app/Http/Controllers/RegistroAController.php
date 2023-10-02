@@ -47,7 +47,7 @@ class RegistroAController extends Controller
 
         $registroA = RegistroA::create($request->all());
 
-        return redirect()->route('registro-as.index')
+        return redirect()->route('registro-a.index')
             ->with('success', 'RegistroA created successfully.');
     }
 
@@ -90,7 +90,7 @@ class RegistroAController extends Controller
 
         $registroA->update($request->all());
 
-        return redirect()->route('registro-as.index')
+        return redirect()->route('registro-a.index')
             ->with('success', 'RegistroA updated successfully');
     }
 
@@ -100,10 +100,16 @@ class RegistroAController extends Controller
      * @throws \Exception
      */
     public function destroy($id)
-    {
-        $registroA = RegistroA::find($id)->delete();
+{
+    $registroA = RegistroA::find($id);
 
-        return redirect()->route('registro-as.index')
-            ->with('success', 'RegistroA deleted successfully');
+    if (!$registroA) {
+        return redirect()->route('registro-a.index')->with('error', 'RegistroA not found');
     }
+
+    $registroA->delete();
+
+    return redirect()->route('registro-a.index')->with('success', 'RegistroA deleted successfully');
+}
+
 }
