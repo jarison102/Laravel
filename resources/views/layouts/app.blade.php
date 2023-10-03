@@ -31,10 +31,15 @@
                     @if(Auth::check())
                     <ul class="navbar-nav me-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('registro-a.index') }}">{{ __('registroAs') }}</a>
+                            <a class="nav-link" href="{{ route('registro-a.index') }}">{{ __('Registro Alumnos') }}</a>
                         </li>
+
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('registrop.index') }}">{{ __('registrop') }}</a>
+                            <a class="nav-link" href="{{ route('registrop.index') }}">{{ __('Registro Profesores') }}</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('registrods.index') }}">{{ __('Registro Directores') }}</a>
                         </li>
                         
                     </ul>
