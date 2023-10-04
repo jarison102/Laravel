@@ -41,6 +41,16 @@
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('registrods.index') }}">{{ __('Registro Directores') }}</a>
                         </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('registrom.index') }}">{{ __('Registro Materias') }}</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('Asignacion.index') }}">{{ __('Asignacion de Materias') }}</a>
+                        </li>                        
+                        
+
                         
                     </ul>
                     @endif

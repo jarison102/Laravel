@@ -30,6 +30,9 @@ Auth::routes();
 Route::resource('registro-a', App\Http\Controllers\RegistroAController::class)->middleware('auth');
 Route::resource('registrop', App\Http\Controllers\RegistropController::class)->middleware('auth');
 Route::resource('registrods', App\Http\Controllers\RegistrodController::class)->middleware('auth');
+Route::resource('registrom', App\Http\Controllers\RegistromController::class)->middleware('auth');
+Route::resource('Asignacion', App\Http\Controllers\AsignacionController::class)->middleware('auth');
+
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 
